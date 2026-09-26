@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday Bestie ❤️</title>
+
+    <link rel="stylesheet"
+        href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =================================
+     BACKGROUND MUSIC
+================================= -->
+
+<audio id="bgMusic" loop>
+
+    <source
+        src="music/birthday.mp3"
+        type="audio/mpeg">
+
+</audio>
+
+
+
+<!-- =================================
+     BACKGROUND EFFECTS
+================================= -->
+
+<div class="stars"></div>
+
+<div id="balloons"></div>
+
+<div id="heartContainer"></div>
+
+<div id="confettiContainer"></div>
+
+
+
+<!-- =================================
+     MAIN CONTAINER
+================================= -->
+
+<main>
+
+
+
+<!-- =================================
+     1. WELCOME
+================================= -->
+
+<section
+    id="welcome"
+    class="screen active">
+
+
+    <div class="moon">
+        🌙
+    </div>
+
+
+    <!-- Cute Character: Milo -->
+
+    <div class="cartoon">
+
+
+        <div class="hair"></div>
+
+
+        <div class="head">
+
+
+            <div class="eye left"></div>
+
+            <div class="eye right"></div>
+
+
+            <div class="cheek left"></div>
+
+            <div class="cheek right"></div>
+
+
+            <div class="nose"></div>
+
+
+            <div class="mouth">
+
+                <span></span>
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="body">
+
+
+            <div class="arm left-arm"></div>
+
+            <div class="arm right-arm"></div>
+
+
+            <div class="leg left-leg"></div>
+
+            <div class="leg right-leg"></div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- English text only -->
+
+    <div class="speech">
+
+
+        <p id="welcomeSpeech">
+
+            Hiiii! 👋🏻 Happy Birthday! 🎂
+            <br>
+            Today I have a little surprise
+            prepared just for you! ❤️
+            <br>
+            Are you ready? 🎉
+
+        </p>
+
+
+    </div>
+
+
+
+    <button
+        onclick="startCelebration()">
+
+        Start Celebration 🎉
+
+    </button>
+
+
+</section>
+
+
+
+
+<!-- =================================
+     2. CAKE
+================================= -->
+
+<section
+    id="cake"
+    class="screen">
+
+
+    <div class="cartoon small">
+
+
+        <div class="hair"></div>
+
+
+        <div class="head">
+
+
+            <div class="eye left"></div>
+
+            <div class="eye right"></div>
+
+
+            <div class="nose"></div>
+
+
+            <div class="mouth">
+
+                <span></span>
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="body">
+
+
+            <div class="arm left-arm"></div>
+
+            <div class="arm right-arm"></div>
+
+
+            <div class="leg left-leg"></div>
+
+            <div class="leg right-leg"></div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <div class="speech">
+
+
+        <p id="cakeSpeech">
+
+            Yayyy! 🎉
+            <br>
+            Let's make a birthday cake! 🎂
+            <br>
+            Look at the candles first,
+            then let's cut the cake! ❤️
+
+        </p>
+
+
+    </div>
+
+
+
+    <h1>
+
+        🎂 Birthday Cake
+
+    </h1>
+
+
+
+    <div
+        id="cakeObject"
+        class="cake">
+
+
+        <div class="cake-top"></div>
+
+
+        <div class="cream"></div>
+
+
+        <div class="cake-middle"></div>
+
+
+        <div class="cream second"></div>
+
+
+        <div class="cake-bottom"></div>
+
+
+
+        <!-- Candles -->
+
+        <div class="candle one">
+
+            <div class="flame"></div>
+
+        </div>
+
+
+        <div class="candle two">
+
+            <div class="flame"></div>
+
+        </div>
+
+
+        <div class="candle three">
+
+            <div class="flame"></div>
+
+        </div>
+
+
+    </div>
+
+
+
+    <button
+        id="cakeButton"
+        onclick="cutCake()">
+
+        Cut the Cake 🎂
+
+    </button>
+
+
+
+    <button
+        id="memoriesButton"
+        class="hidden"
+        onclick="showPhotos()">
+
+        See Our Memories 📸
+
+    </button>
+
+
+</section>
+
+
+
+
+<!-- =================================
+     3. PHOTOS
+================================= -->
+
+<section
+    id="photos"
+    class="screen">
+
+
+    <div class="cartoon small">
+
+
+        <div class="hair"></div>
+
+
+        <div class="head">
+
+
+            <div class="eye left"></div>
+
+            <div class="eye right"></div>
+
+
+            <div class="nose"></div>
+
+
+            <div class="mouth">
+
+                <span></span>
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="body">
+
+
+            <div class="arm left-arm"></div>
+
+            <div class="arm right-arm"></div>
+
+
+            <div class="leg left-leg"></div>
+
+            <div class="leg right-leg"></div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <div class="speech">
+
+
+        <p>
+
+            Hey! 📸
+            <br>
+            Now let's look at all
+            our beautiful memories together! ❤️
+            <br>
+            Take your time and enjoy every picture. 🥹
+
+        </p>
+
+
+    </div>
+
+
+
+    <h1>
+
+        Our Memories 📸❤️
+
+    </h1>
+
+
+
+    <!-- =================================
+         10 PHOTOS
+    ================================= -->
+
+
+    <div class="photo-list">
+
+
+
+        <!-- PHOTO 1 -->
+
+        <div class="memory-photo">
+
+            <img
+                src="images/photo1.jpg"
+                alt="Memory One">
+
+            <p>
+                A Memory Close to My Heart 🫶🏻❤️
+            </p>
+
+        </div>
+
+
+
+        <!-- PHOTO 2 -->
+
+        <div class="memory-photo">
+
+            <img
+                src="images/photo2.jpg"
+                alt="Memory Two">
+
+            <p>
+                The Kind of Moment I Wish to Relive ♾️🥹
+            </p>
+
+        </div>
+
+
+
+        <!-- PHOTO 3 -->
+
+        <div class="memory-photo">
+
+            <img
+                src="images/photo3.jpg"
+                alt="Memory Three">
+
+            <p>
+                A Little Memory I’ll Always Treasure ❤️😂
+            </p>
+
+        </div>
+
+
+
+        <!-- PHOTO 4 -->
+
+        <div class="memory-photo">
+
+            <img
+                src="images/photo4.jpg"
+                alt="Memory Four">
+
+            <p>
+                Forever A Part Of Our Story 💞💗
+            </p>
+
+        </div>
+
+
+
+        <!-- PHOTO 5 -->
+
+        <div class="memory-photo">
+
+            <img
+                src="images/photo5.jpg"
+                alt="Memory Five">
+
+            <p>
+                A Memory I’ll Keep Forever ❤️♾️
+            </p>
+
+        </div>
+
+
+
+        <!-- PHOTO 6 -->
+
+        <div class="memory-photo">
+
+            <img
+                src="images/photo6.jpg"
+                alt="Memory Six">
+
+            <p>
+                A Little Piece of Happiness 🌸♾️
+            </p>
+
+        </div>
+
+
+
+        <!-- PHOTO 7 -->
+
+        <div class="memory-photo">
+
+            <img
+                src="images/photo7.jpg"
+                alt="Memory Seven">
+
+            <p>
+                Just Us Being Us 😂❤️ 
+            </p>
+
+        </div>
+
+
+
+        <!-- PHOTO 8 -->
+
+        <div class="memory-photo">
+
+            <img
+                src="images/photo8.jpg"
+                alt="Memory Eight">
+
+            <p>
+                forever one of my favorites 🥹💞
+            </p>
+
+        </div>
+
+
+
+        <!-- PHOTO 9 -->
+
+        <div class="memory-photo">
+
+            <img
+                src="images/photo9.jpg"
+                alt="Memory Nine">
+
+            <p>
+                One Of Those Special Memories 🥹💕
+            </p>
+
+        </div>
+
+
+
+        <!-- PHOTO 10 -->
+
+        <div class="memory-photo">
+
+            <img
+                src="images/photo10.jpg"
+                alt="Memory Ten">
+
+            <p>
+                A Memory Made With You 💗❤️
+            </p>
+
+        </div>
+
+
+
+         <!-- PHOTO 11 -->
+
+        <div class="memory-photo">
+
+            <img
+                src="images/photo11.jpg"
+                alt="Memory eleven">
+
+            <p>
+                Our Little World 🌸💕
+            </p>
+
+        </div>
+
+
+
+         <!-- PHOTO 12 -->
+
+        <div class="memory-photo">
+
+            <img
+                src="images/photo12.jpg"
+                alt="Memory twelve">
+
+            <p>
+                A Moments Worth Remembering 🥹💕
+            </p>
+
+        </div>
+
+
+
+
+    </div>
+
+
+
+    <button
+        onclick="showVideos()">
+
+        Continue to Videos 🎥
+
+    </button>
+
+
+</section>
+
+
+
+
+<!-- =================================
+     4. VIDEOS
+================================= -->
+
+<section
+    id="videos"
+    class="screen">
+
+
+
+    <div class="cartoon small">
+
+
+        <div class="hair"></div>
+
+
+        <div class="head">
+
+
+            <div class="eye left"></div>
+
+            <div class="eye right"></div>
+
+
+            <div class="nose"></div>
+
+
+            <div class="mouth">
+
+                <span></span>
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="body">
+
+
+            <div class="arm left-arm"></div>
+
+            <div class="arm right-arm"></div>
+
+
+            <div class="leg left-leg"></div>
+
+            <div class="leg right-leg"></div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <div class="speech">
+
+
+        <p>
+
+            Wait... 😎🎥
+            <br>
+            There is still another surprise waiting for you!
+            <br>
+            Swipe through the cards and enjoy our memories. ❤️
+
+        </p>
+
+
+    </div>
+
+
+
+    <h1>
+
+        Our Video Memories 🎞️
+
+    </h1>
+
+
+
+    <div
+        class="video-wrapper"
+        id="videoWrapper">
+
+
+
+        <!-- VIDEO 1 -->
+
+        <div class="video-card">
+
+            <video
+                controls
+                playsinline>
+
+                <source
+                    src="videos/video1.mp4"
+                    type="video/mp4">
+
+            </video>
+
+
+            <h3>
+                A Beautiful Little Moment 💗❤️
+            </h3>
+
+        </div>
+
+
+
+        <!-- VIDEO 2 -->
+
+        <div class="video-card">
+
+            <video
+                controls
+                playsinline>
+
+                <source
+                    src="videos/video2.mp4"
+                    type="video/mp4">
+
+            </video>
+
+
+            <h3>
+                A Moment to Remember ✨
+            </h3>
+
+        </div>
+
+
+
+        <!-- VIDEO 3 -->
+
+        <div class="video-card">
+
+            <video
+                controls
+                playsinline>
+
+                <source
+                    src="videos/video3.mp4"
+                    type="video/mp4">
+
+            </video>
+
+
+            <h3>
+                Our Kind of Crazy 😂❤️
+            </h3>
+
+        </div>
+
+
+
+        <!-- VIDEO 4 -->
+
+        <div class="video-card">
+
+            <video
+                controls
+                playsinline>
+
+                <source
+                    src="videos/video4.mp4"
+                    type="video/mp4">
+
+            </video>
+
+
+            <h3>
+                Another Day, Another Memory 😂
+            </h3>
+
+        </div>
+
+
+
+        <!-- VIDEO 5 -->
+
+        <div class="video-card">
+
+            <video
+                controls
+                playsinline>
+
+                <source
+                    src="videos/video5.mp4"
+                    type="video/mp4">
+
+            </video>
+
+
+            <h3>
+                Certified Bestie Moment 😎❤️
+            </h3>
+
+        </div>
+
+
+
+        <!-- VIDEO 6 -->
+
+        <div class="video-card">
+
+            <video
+                controls
+                playsinline>
+
+                <source
+                    src="videos/video6.mp4"
+                    type="video/mp4">
+
+            </video>
+
+
+            <h3>
+                A Snapshot of Us 📸❤️
+            </h3>
+
+        </div>
+
+
+
+        <!-- VIDEO 7 -->
+
+        <div class="video-card">
+
+            <video
+                controls
+                playsinline>
+
+                <source
+                    src="videos/video7.mp4"
+                    type="video/mp4">
+
+            </video>
+
+
+            <h3>
+                Our Kind of Perfect Mess 💕🤭
+            </h3>
+
+        </div>
+
+
+    </div>
+
+
+
+    <div class="swipe-hint">
+
+        ← Swipe →
+
+    </div>
+
+
+
+    <button
+        onclick="openEnvelope()">
+
+        I Have Something For You 💌
+
+    </button>
+
+
+</section>
+
+
+
+
+<!-- =================================
+     5. ENVELOPE
+================================= -->
+
+<section
+    id="envelope"
+    class="screen">
+
+
+
+    <div class="cartoon small">
+
+
+        <div class="hair"></div>
+
+
+        <div class="head">
+
+
+            <div class="eye left"></div>
+
+            <div class="eye right"></div>
+
+
+            <div class="nose"></div>
+
+
+            <div class="mouth">
+
+                <span></span>
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="body">
+
+
+            <div class="arm left-arm"></div>
+
+            <div class="arm right-arm"></div>
+
+
+            <div class="leg left-leg"></div>
+
+            <div class="leg right-leg"></div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <div class="speech">
+
+
+        <p>
+
+            Okay... jokes aside. 🥹
+            <br>
+            Now it is time for something
+            a little more special.
+            <br>
+            There is a special message waiting for you. 💌
+
+        </p>
+
+
+    </div>
+
+
+
+    <div
+        class="envelope"
+        id="envelopeBox"
+        onclick="openLetter()">
+
+
+        <div class="envelope-back"></div>
+
+
+        <div class="letter">
+
+            💌
+
+        </div>
+
+
+        <div class="envelope-front"></div>
+
+
+        <div class="envelope-flap"></div>
+
+
+    </div>
+
+
+
+    <p class="tap-text">
+
+        Tap the envelope 💌
+
+    </p>
+
+
+
+    <button
+        id="readMessageButton"
+        class="hidden"
+        onclick="showMessage()">
+
+        Read My Message ❤️
+
+    </button>
+
+
+</section>
+
+
+
+
+<!-- =================================
+     6. SPECIAL MESSAGE
+================================= -->
+
+<section
+    id="message"
+    class="screen">
+
+
+
+    <div class="cartoon small">
+
+
+        <div class="hair"></div>
+
+
+        <div class="head">
+
+
+            <div class="eye left"></div>
+
+            <div class="eye right"></div>
+
+
+            <div class="nose"></div>
+
+
+            <div class="mouth">
+
+                <span></span>
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="body">
+
+
+            <div class="arm left-arm"></div>
+
+            <div class="arm right-arm"></div>
+
+
+            <div class="leg left-leg"></div>
+
+            <div class="leg right-leg"></div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <div class="speech">
+
+
+        <p>
+
+            Take a quiet moment and read this... 🥹❤️
+            <br>
+            This message was written especially for you.
+
+        </p>
+
+
+    </div>
+
+
+
+    <div class="message-box">
+
+
+        <h1>
+
+            💌 A Special Message For You
+
+        </h1>
+
+
+        <p id="specialMessage"></p>
+
+
+    </div>
+
+
+
+    <button
+        id="finalButton"
+        class="hidden"
+        onclick="finalSurprise()">
+
+        One Last Surprise 🥹❤️
+
+    </button>
+
+
+</section>
+
+
+
+
+<!-- =================================
+     7. FINAL SURPRISE
+================================= -->
+
+<section
+    id="final"
+    class="screen">
+
+
+
+    <div class="final-cartoon">
+
+        🧸
+
+    </div>
+
+
+
+    <div class="final-heart">
+
+        ❤️
+
+    </div>
+
+
+
+    <h1>
+
+        Happy Birthday, Bestie! 🎂🎀
+
+    </h1>
+
+
+
+    <p class="final-message">
+
+        Here's to you, to us,
+        to all the memories we've already made,
+        and to all the crazy, beautiful memories
+        that are still waiting for us. 🥹❤️
+
+    </p>
+
+
+
+    <h2>
+
+        I would still choose you. 🥹❤️
+
+    </h2>
+
+
+
+    <h3>
+
+        Love you always. 🫶🏻♾️
+
+    </h3>
+
+
+</section>
+
+
+
+</main>
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
